@@ -1,0 +1,87 @@
+{
+  "githubUser": "decomesu-cell",
+  "repoName": "generador-firmas",
+  "empresas": {
+    "almantour": {
+      "nombreMostrado": "Almantour",
+      "colorAcento": "#E8590C",
+      "logoCuadrado": "assets/almantour/logo-cuadrado.png",
+      "logoHorizontal": "assets/almantour/logo-horizontal.png",
+      "web": "www.almantour.es",
+      "dominioEmail": "almantour.com",
+      "emailPorDefecto": "",
+      "autocompletarDominio": true,
+      "cargosComunes": [
+        "Departamento de ventas",
+        "Gestión de viajes",
+        "Atención al cliente",
+        "Dirección"
+      ],
+      "tieneVariasOficinas": true,
+      "oficinas": {
+        "almansa": {
+          "etiqueta": "Oficina Almansa",
+          "telefono": "967 34 33 46",
+          "esLineaUrgencias": true,
+          "direccion": "Corredera 43, 02640 Almansa (Albacete)"
+        },
+        "caudete": {
+          "etiqueta": "Oficina Caudete",
+          "telefono": "965 82 72 26",
+          "esLineaUrgencias": false,
+          "telefonoUrgenciasReferencia": "967 34 33 46",
+          "direccion": "Calle Alcalde Luis Pascual 36, 02660 Caudete (Albacete)"
+        }
+      },
+      "redes": {
+        "facebook": "https://www.facebook.com/viajes.almantour",
+        "instagram": "https://www.instagram.com/almantourviajes/",
+        "linkedin": "https://www.linkedin.com/company/viajes-almantour/",
+        "whatsapp": "https://wa.me/34967343346"
+      },
+      "mostrarRedes": {
+        "facebook": true,
+        "instagram": true,
+        "linkedin": true,
+        "whatsapp": true
+      }
+    },
+    "montescar": {
+      "nombreMostrado": "Montescar",
+      "colorAcento": "#C9A227",
+      "logoCuadrado": "assets/montescar/logo-cuadrado.png",
+      "logoHorizontal": "assets/montescar/logo-horizontal.png",
+      "web": "www.montescar.es",
+      "dominioEmail": "montescar.es",
+      "emailPorDefecto": "autocares@montescar.es",
+      "autocompletarDominio": false,
+      "cargosComunes": [
+        "Asistente de Dirección Comercial",
+        "Administración",
+        "Comercial"
+      ],
+      "tieneVariasOficinas": false,
+      "oficinas": {
+        "principal": {
+          "etiqueta": "",
+          "telefono": "965 80 11 73",
+          "esLineaUrgencias": false,
+          "direccion": "P.I. El Rubial, C.9-11, 03400 Villena, Alicante "
+        }
+      },
+      "redes": {
+        "facebook": "https://www.facebook.com/autocares.montescar/",
+        "instagram": "https://www.instagram.com/autocares.montescar/",
+        "linkedin": "https://www.linkedin.com/company/montescar-sl/",
+        "whatsapp": ""
+      },
+      "mostrarRedes": {
+        "facebook": true,
+        "instagram": true,
+        "linkedin": true,
+        "whatsapp": false
+      }
+    }
+  },
+  "disclaimer": "Aviso legal: este mensaje puede contener información confidencial. Si no es el destinatario, notifíquelo y elimínelo. Tratamos sus datos conforme al RGPD."
+}
