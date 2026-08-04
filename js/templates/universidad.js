@@ -9,8 +9,8 @@ function generarFirmaUniversidadBase(d, colores) {
     : '';
   const anchoCabeceraEstimado = d.nombreCompleto.length * 9.5 + d.cargo.length * 6.5 + 30;
   const cabecera = anchoCabeceraEstimado <= 420
-    ? `<tr><td align="center" style="padding:0 0 8px;text-align:center;line-height:22px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:16pt;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:11pt;color:${colores.puesto};">&nbsp;&nbsp;·&nbsp;&nbsp;${d.cargo}</span></td></tr>`
-    : `<tr><td align="center" style="padding:0;text-align:center;line-height:22px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:16pt;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span></td></tr><tr><td align="center" style="padding:0 0 8px;text-align:center;line-height:18px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:11pt;color:${colores.puesto};">·&nbsp;&nbsp;${d.cargo}</span></td></tr>`;
+    ? `<tr><td align="center" style="padding:0 0 8px;text-align:center;line-height:22px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:16pt;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12pt;color:${colores.puesto};">&nbsp;&nbsp;·&nbsp;&nbsp;${d.cargo}</span></td></tr>`
+    : `<tr><td align="center" style="padding:0;text-align:center;line-height:22px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:16pt;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span></td></tr><tr><td align="center" style="padding:0 0 8px;text-align:center;line-height:18px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:12pt;color:${colores.puesto};">·&nbsp;&nbsp;${d.cargo}</span></td></tr>`;
 
   return `
 <table role="presentation" width="440" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family:'Lato',Arial,Helvetica,sans-serif;width:100%;max-width:440px;margin:0 auto;text-align:center;">

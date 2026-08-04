@@ -1,4 +1,4 @@
-const VERSION_RECURSOS = '20260805-7';
+const VERSION_RECURSOS = '20260805-8';
 
 async function cargarScript(ruta) {
   await new Promise((resolve, reject) => {
