@@ -11,7 +11,7 @@ function generarFirmaMinimalista(d) {
 
   return `
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; width:440px;">
-  <tr><td style="padding-bottom:16px;"><img src="${urlImagen(e.logoHorizontal)}" alt="${e.nombreMostrado}" width="130" style="display:block; border:0;"></td></tr>
+  <tr><td style="padding-bottom:16px;"><img src="${urlImagen(e.logoHorizontal)}" alt="${e.nombreMostrado}" width="160" style="display:block; border:0;"></td></tr>
   <tr><td style="font-size:16px; font-weight:bold; color:#1a1a1a; padding-bottom:2px;">${d.nombreCompleto}</td></tr>
   <tr><td style="font-size:12.5px; color:#888888; padding-bottom:14px;">${d.cargo}${d.oficina.etiqueta ? ' · ' + d.oficina.etiqueta : ''}</td></tr>
 

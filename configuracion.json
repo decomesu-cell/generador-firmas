@@ -14,7 +14,8 @@
       "cargosComunes": [
         "Departamento de ventas",
         "Gestión de viajes",
-        "Atención al cliente",
+        "Administración y contabilidad",
+        "Organización de viajes para universidades",
         "Dirección"
       ],
       "tieneVariasOficinas": true,
@@ -23,14 +24,16 @@
           "etiqueta": "Oficina Almansa",
           "telefono": "967 34 33 46",
           "esLineaUrgencias": true,
-          "direccion": "Corredera 43, 02640 Almansa (Albacete)"
+          "direccion": "Corredera 43, 02640 Almansa (Albacete)",
+          "localidad": "Almansa (Albacete)"
         },
         "caudete": {
           "etiqueta": "Oficina Caudete",
           "telefono": "965 82 72 26",
           "esLineaUrgencias": false,
           "telefonoUrgenciasReferencia": "967 34 33 46",
-          "direccion": "Calle Alcalde Luis Pascual 36, 02660 Caudete (Albacete)"
+          "direccion": "Calle Alcalde Luis Pascual 36, 02660 Caudete (Albacete)",
+          "localidad": "Caudete (Albacete)"
         }
       },
       "redes": {
@@ -70,7 +73,8 @@
           "etiqueta": "",
           "telefono": "965 80 11 73",
           "esLineaUrgencias": false,
-          "direccion": "P.I. El Rubial, C.9-11, 03400 Villena, Alicante "
+          "direccion": "P.I. El Rubial, C.9-11, 03400 Villena, Alicante ",
+          "localidad": "Villena (Alicante)"
         }
       },
       "redes": {

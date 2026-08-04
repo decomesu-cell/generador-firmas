@@ -1,7 +1,9 @@
+const VERSION_RECURSOS = '20260805-7';
+
 async function cargarScript(ruta) {
   await new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = ruta;
+    script.src = `${ruta}?v=${VERSION_RECURSOS}`;
     script.onload = resolve;
     script.onerror = () => reject(new Error(`No se pudo cargar ${ruta}`));
     document.body.appendChild(script);

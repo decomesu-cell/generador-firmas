@@ -36,7 +36,8 @@ const CONFIG_LOCAL = {
       cargosComunes: [
         "Departamento de ventas",           // <-- SUSTITUYE/AMPLÍA esta lista
         "Gestión de viajes",
-        "Atención al cliente",
+        "Administración y contabilidad",
+        "Organización de viajes para universidades",
         "Dirección"
       ],
 
@@ -49,14 +50,16 @@ const CONFIG_LOCAL = {
           etiqueta: "Oficina Almansa",
           telefono: "967 34 33 46",         // <-- SUSTITUYE si cambia
           esLineaUrgencias: true,           // esta oficina ES la línea de emergencias
-          direccion: "Corredera 43, Almansa (Albacete)" // <-- SUSTITUYE si cambia
+          direccion: "Corredera 43, Almansa (Albacete)", // <-- SUSTITUYE si cambia
+          localidad: "Almansa (Albacete)"
         },
         caudete: {
           etiqueta: "Oficina Caudete",
           telefono: "965 82 72 26",         // <-- SUSTITUYE por el teléfono REAL de Caudete
           esLineaUrgencias: false,
           telefonoUrgenciasReferencia: "967 34 33 46", // el de Almansa, no lo toques salvo que cambie
-          direccion: "Calle Ejemplo 5, Caudete (Albacete)" // <-- SUSTITUYE por la dirección REAL
+          direccion: "Calle Ejemplo 5, Caudete (Albacete)", // <-- SUSTITUYE por la dirección REAL
+          localidad: "Caudete (Albacete)"
         }
       },
 
@@ -101,7 +104,8 @@ const CONFIG_LOCAL = {
           etiqueta: "",                     // vacío = no se muestra etiqueta de oficina
           telefono: "967 00 00 00",         // <-- SUSTITUYE por el teléfono REAL
           esLineaUrgencias: false,
-          direccion: "Calle Ejemplo 8, Almansa (Albacete)" // <-- SUSTITUYE por la dirección REAL
+          direccion: "Calle Ejemplo 8, Almansa (Albacete)", // <-- SUSTITUYE por la dirección REAL
+          localidad: "Villena (Alicante)"
         }
       },
 

@@ -17,7 +17,7 @@ function bloqueUrgencias(telefono, compacto) {
 }
 
 // Fila de iconos de redes sociales (solo las que la empresa tenga configuradas)
-function filaRedesSociales(redes, mostrarRedes = {}) {
+function filaRedesSociales(redes, mostrarRedes = {}, tam = 18) {
   const iconosPorClave = {
     facebook: 'assets/iconos/icono-facebook.png',
     instagram: 'assets/iconos/icono-instagram.png',
@@ -27,7 +27,7 @@ function filaRedesSociales(redes, mostrarRedes = {}) {
   return Object.entries(redes).map(([clave, url]) => {
     const ruta = iconosPorClave[clave];
     if (!ruta || !url || mostrarRedes[clave] === false) return '';
-    return `<a href="${url}" style="text-decoration:none; padding-right:6px;">${iconoImagen(ruta, clave, 18)}</a>`;
+    return `<a href="${url}" style="text-decoration:none; padding-right:6px;">${iconoImagen(ruta, clave, tam)}</a>`;
   }).join('');
 }
 
