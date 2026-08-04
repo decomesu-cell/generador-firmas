@@ -48,7 +48,7 @@
     },
     "montescar": {
       "nombreMostrado": "Montescar",
-      "colorAcento": "#D7AF5F",
+      "colorAcento": "#C9A227",
       "logoCuadrado": "assets/montescar/logo-cuadrado.png",
       "logoHorizontal": "assets/montescar/logo-horizontal.png",
       "web": "www.montescar.es",
