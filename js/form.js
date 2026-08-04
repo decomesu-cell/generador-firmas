@@ -96,7 +96,7 @@ if (!claveEmpresaFija) {
     <label>Móvil <span class="opcional">(opcional, 9 cifras)</span></label>
     <input type="text" id="campoMovil" placeholder="600 00 00 00" inputmode="numeric" autocomplete="tel" maxlength="12" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}">
 
-    <div id="bloqueUniversidad" class="opcion-universidad" style="display:none;">
+    <div id="bloqueUniversidad" class="opcion-universidad">
       <label><input type="checkbox" id="campoUniversidad"> Activar diseños para universidades</label>
     </div>
 

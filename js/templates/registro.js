@@ -5,12 +5,12 @@ const ESTILOS = {
   universidad_apagada: {
     etiqueta: "Universidad · tonos apagados",
     generar: generarFirmaUniversidadApagada,
-    grupoUniversidad: "universidad"
+    universidadGeneral: true
   },
   universidad_corporativa: {
     etiqueta: "Universidad · colores corporativos",
     generar: generarFirmaUniversidadCorporativa,
-    grupoUniversidad: "universidad"
+    universidadGeneral: true
   }
 };
 
@@ -23,12 +23,12 @@ function grupoUniversidadParaEmail(email) {
 }
 
 function estilosDisponibles(email, usarUniversidad) {
-  const grupo = grupoUniversidadParaEmail(email);
-  const universidad = (CONFIG.universidades || {})[grupo];
-  const disenosPermitidos = universidad ? universidad.disenos || [] : [];
-  return Object.entries(ESTILOS).filter(([clave, estilo]) => {
-    if (usarUniversidad) return disenosPermitidos.includes(clave);
-    return !estilo.grupoUniversidad;
+  const universidadDetectada = grupoUniversidadParaEmail(email);
+  return Object.entries(ESTILOS).filter(([, estilo]) => {
+    if (!estilo.universidadGeneral && !estilo.universidadEspecifica) return true;
+    if (!usarUniversidad) return false;
+    if (estilo.universidadGeneral) return true;
+    return estilo.universidadEspecifica === universidadDetectada;
   });
 }
 
@@ -38,9 +38,7 @@ function actualizarControlesUniversidad(email) {
   const selector = document.getElementById('campoEstilo');
   if (!casilla || !selector) return;
 
-  const hayDisenos = Boolean(grupoUniversidadParaEmail(email));
-  bloque.style.display = hayDisenos ? 'block' : 'none';
-  if (!hayDisenos) casilla.checked = false;
+  bloque.style.display = 'block';
 
   const disponibles = estilosDisponibles(email, casilla.checked);
   selector.innerHTML = disponibles

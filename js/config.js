@@ -122,11 +122,10 @@ const CONFIG_LOCAL = {
   },
 
   universidades: {
-    usal: {
-      nombre: "USAL",
-      correos: ["usal@almantour.com"],
-      disenos: ["universidad_apagada", "universidad_corporativa"]
-    }
+    ua: { nombre: "Universidad de Alicante", correos: ["ua@almantour.com"] },
+    usal: { nombre: "Universidad de Salamanca", correos: ["usal@almantour.com"] },
+    uji: { nombre: "Universitat Jaume I", correos: ["uji@almantour.com"] },
+    umh: { nombre: "Universidad Miguel Hernández", correos: ["umh@almantour.com"] }
   },
   // Texto legal corto que aparece al final de toda firma
   disclaimer: "Aviso legal: este mensaje puede contener información confidencial. Si no es el destinatario, notifíquelo y elimínelo. Tratamos sus datos conforme al RGPD."

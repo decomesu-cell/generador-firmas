@@ -11,9 +11,9 @@ function generarFirmaUniversidadBase(d, colores) {
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="font-family:'Lato',Arial,Helvetica,sans-serif;width:346px;margin:0 auto;text-align:center;">
   <tr>
     <td colspan="2" align="center" style="padding:0 0 5px 0;text-align:center;white-space:nowrap;line-height:18px;">
-      <span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;color:${colores.nombre};">${d.nombreCompleto}</span>
+      <span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;color:${colores.nombre};">${d.nombreCompleto}</span>
       <span style="color:${colores.separador};">&nbsp;&nbsp;·&nbsp;&nbsp;</span>
-      <span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:10px;color:${colores.puesto};">${d.cargo}</span>
+      <span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:11px;color:${colores.puesto};">${d.cargo}</span>
     </td>
   </tr>
   <tr>
