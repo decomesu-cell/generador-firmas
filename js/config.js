@@ -37,7 +37,7 @@ const CONFIG_LOCAL = {
         "Departamento de ventas",           // <-- SUSTITUYE/AMPLÍA esta lista
         "Gestión de viajes",
         "Administración y contabilidad",
-        "Organización de viajes para universidades",
+        "Gestión de viajes para universidades",
         "Dirección"
       ],
 
