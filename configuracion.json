@@ -44,7 +44,11 @@
         "instagram": true,
         "linkedin": true,
         "whatsapp": true
-      }
+      },
+      "logoUniversidades": "assets/almantour/logo-universidades.png",
+      "isotipoUniversidades": "assets/almantour/isotipo-universidades.png",
+      "logoUniversidadesCorporativo": "assets/almantour/logotipo_almantour.png",
+      "isotipoUniversidadesCorporativo": "assets/almantour/isotipo_almantour.png"
     },
     "montescar": {
       "nombreMostrado": "Montescar",
@@ -83,5 +87,17 @@
       }
     }
   },
-  "disclaimer": "Aviso legal: este mensaje puede contener información confidencial. Si no es el destinatario, notifíquelo y elimínelo. Tratamos sus datos conforme al RGPD."
+  "disclaimer": "Aviso legal: este mensaje puede contener información confidencial. Si no es el destinatario, notifíquelo y elimínelo. Tratamos sus datos conforme al RGPD.",
+  "universidades": {
+    "usal": {
+      "nombre": "USAL",
+      "correos": [
+        "usal@almantour.com"
+      ],
+      "disenos": [
+        "universidad_apagada",
+        "universidad_corporativa"
+      ]
+    }
+  }
 }
