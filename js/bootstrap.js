@@ -16,6 +16,7 @@ async function iniciarAplicacionWeb() {
     'js/validation.js',
     'js/templates/combinada.js',
     'js/templates/minimalista.js',
+    'js/templates/universidad.js',
     'js/templates/registro.js',
     'js/app.js',
     'js/exporters.js',

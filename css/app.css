@@ -37,6 +37,9 @@
   .fila-dos { display: flex; gap: 12px; }
   .fila-dos > div { flex: 1; }
   .opcional { font-weight: normal; color: #999; font-size: 11px; }
+  .opcion-universidad { margin-top:16px; padding:11px 12px; background:#fff8f1; border:1px solid #f1c7ad; border-radius:6px; }
+  .opcion-universidad label { margin:0; cursor:pointer; }
+  .opcion-universidad input { width:auto; min-height:auto; margin:0 7px 0 0; vertical-align:middle; }
   button#btnGenerar {
     margin-top: 22px;
     width: 100%;

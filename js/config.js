@@ -21,6 +21,10 @@ const CONFIG_LOCAL = {
       colorAcento: "#E8590C",
       logoCuadrado: "assets/almantour/logo-cuadrado.png",
       logoHorizontal: "assets/almantour/logo-horizontal.png",
+      logoUniversidades: "assets/almantour/logo-universidades.png",
+      isotipoUniversidades: "assets/almantour/isotipo-universidades.png",
+      logoUniversidadesCorporativo: "assets/almantour/logotipo_almantour.png",
+      isotipoUniversidadesCorporativo: "assets/almantour/isotipo_almantour.png",
       web: "www.almantour.es",             // <-- SUSTITUYE por la web real (si es distinta)
       dominioEmail: "almantour.com",        // dominio usado para autocompletar
       emailPorDefecto: "",
@@ -73,7 +77,7 @@ const CONFIG_LOCAL = {
     // ---------------------- MONTESCAR ----------------------
     montescar: {
       nombreMostrado: "Montescar",
-      colorAcento: "#C9A227",
+      colorAcento: "#D4AF37",
       logoCuadrado: "assets/montescar/logo-cuadrado.png",
       logoHorizontal: "assets/montescar/logo-horizontal.png",
       web: "www.montescar.com",            // <-- SUSTITUYE por la web real
@@ -117,6 +121,13 @@ const CONFIG_LOCAL = {
 
   },
 
+  universidades: {
+    usal: {
+      nombre: "USAL",
+      correos: ["usal@almantour.com"],
+      disenos: ["universidad_apagada", "universidad_corporativa"]
+    }
+  },
   // Texto legal corto que aparece al final de toda firma
   disclaimer: "Aviso legal: este mensaje puede contener información confidencial. Si no es el destinatario, notifíquelo y elimínelo. Tratamos sus datos conforme al RGPD."
 };
