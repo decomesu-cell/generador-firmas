@@ -1,4 +1,4 @@
-const VERSION_RECURSOS = '20260805-9';
+const VERSION_RECURSOS = '20260805-10';
 
 async function cargarScript(ruta) {
   await new Promise((resolve, reject) => {
@@ -16,6 +16,7 @@ async function iniciarAplicacionWeb() {
     'js/form.js',
     'js/utils.js',
     'js/validation.js',
+    'js/emergencias-opcional.js',
     'js/templates/combinada.js',
     'js/templates/minimalista.js',
     'js/templates/universidad.js',
