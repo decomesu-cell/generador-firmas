@@ -4,6 +4,14 @@ function generarFirmaUniversidadBase(d, colores) {
   const logoTexto = colores.logo || e.logoUniversidades || e.logoHorizontal;
   const isotipo = colores.isotipo || e.isotipoUniversidades || e.logoCuadrado;
   const localidad = d.oficina.localidad || d.oficina.direccion;
+  const telefonoOficina = `<a href="tel:+34${telefonoSinEspacios(d.oficina.telefono)}" style="color:${colores.datos};text-decoration:none;">${d.oficina.telefono}</a>`;
+  const marca24h = `<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>`;
+  const telefonoPrincipal = d.oficina.esLineaUrgencias
+    ? `${telefonoOficina}&nbsp;${marca24h}`
+    : telefonoOficina;
+  const telefonoEmergencias = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia && d.mostrarUrgenciasReferencia !== false)
+    ? `<span style="color:${colores.separador};">&nbsp;&nbsp;·&nbsp;&nbsp;</span><span style="color:${colores.datos};">Emergencias&nbsp;</span><a href="tel:+34${telefonoSinEspacios(d.oficina.telefonoUrgenciasReferencia)}" style="color:${colores.datos};text-decoration:none;">${d.oficina.telefonoUrgenciasReferencia}</a>&nbsp;${marca24h}`
+    : '';
   const movil = d.movil
     ? `<span style="color:${colores.separador};">&nbsp;&nbsp;·&nbsp;&nbsp;</span><a href="tel:+34${telefonoSinEspacios(d.movil)}" style="color:${colores.datos};text-decoration:none;">${d.movil}</a>`
     : '';
@@ -28,7 +36,7 @@ function generarFirmaUniversidadBase(d, colores) {
   </tr>
   <tr>
     <td align="center" style="font-size:10pt;color:${colores.datos};text-align:center;padding:4px 0;">
-      <a href="tel:+34${telefonoSinEspacios(d.oficina.telefono)}" style="color:${colores.datos};text-decoration:none;">${d.oficina.telefono}</a>&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>${movil}
+      ${telefonoPrincipal}${telefonoEmergencias}${movil}
     </td>
   </tr>
   <tr>
