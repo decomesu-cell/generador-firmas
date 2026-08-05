@@ -2,11 +2,11 @@
 function generarFirmaMinimalista(d) {
   const e = d.empresa;
   const lineaUrgencias = d.oficina.esLineaUrgencias
-    ? ` ${iconoImagen('assets/iconos/icono-whatsapp.png','WhatsApp',13)} ${iconoImagen('assets/iconos/icono-24h.png','24h',13)}`
+    ? `&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>`
     : '';
   const filaMovil = d.movil ? `<tr><td style="font-size:12px; color:#333333; padding-bottom:3px;">${enlaceTelefono(d.movil)}</td></tr>` : '';
   const filaUrgenciasReferencia = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia)
-    ? `<tr><td style="font-size:11.5px; color:#666666; padding-bottom:4px;">Urgencias ${enlaceTelefono(d.oficina.telefonoUrgenciasReferencia)} ${iconoImagen('assets/iconos/icono-whatsapp.png','WhatsApp',13)} ${iconoImagen('assets/iconos/icono-24h.png','24h',13)}</td></tr>`
+    ? `<tr><td style="font-size:11.5px; color:#666666; padding-bottom:4px;">Urgencias ${enlaceTelefono(d.oficina.telefonoUrgenciasReferencia)}&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup></td></tr>`
     : '';
 
   return `

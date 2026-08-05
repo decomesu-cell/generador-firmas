@@ -2,12 +2,12 @@
 function generarFirmaCombinada(d) {
   const e = d.empresa;
   const telefonoLinea = d.oficina.esLineaUrgencias
-    ? `${enlaceTelefono(d.oficina.telefono)} ${iconoImagen('assets/iconos/icono-whatsapp.png','WhatsApp',14)} ${iconoImagen('assets/iconos/icono-24h.png','24h',14)}`
+    ? `${enlaceTelefono(d.oficina.telefono)}&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>`
     : enlaceTelefono(d.oficina.telefono);
 
   const filaUrgenciasReferencia = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia)
     ? `<tr><td style="font-size:11px; color:#777777; padding-bottom:4px; padding-left:22px;">
-         Urgencias ${enlaceTelefono(d.oficina.telefonoUrgenciasReferencia)} ${iconoImagen('assets/iconos/icono-whatsapp.png','WhatsApp',13)} ${iconoImagen('assets/iconos/icono-24h.png','24h',13)}
+         Urgencias ${enlaceTelefono(d.oficina.telefonoUrgenciasReferencia)}&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>
        </td></tr>` : '';
 
   const filaMovil = d.movil
