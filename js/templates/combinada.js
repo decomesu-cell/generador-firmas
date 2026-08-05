@@ -5,7 +5,7 @@ function generarFirmaCombinada(d) {
     ? `${enlaceTelefono(d.oficina.telefono)}&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>`
     : enlaceTelefono(d.oficina.telefono);
 
-  const filaUrgenciasReferencia = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia)
+  const filaUrgenciasReferencia = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia && d.mostrarUrgenciasReferencia !== false)
     ? `<tr><td style="font-size:11px; color:#777777; padding-bottom:4px; padding-left:22px;">
          Urgencias ${enlaceTelefono(d.oficina.telefonoUrgenciasReferencia)}&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>
        </td></tr>` : '';

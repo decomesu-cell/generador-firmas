@@ -5,7 +5,7 @@ function generarFirmaMinimalista(d) {
     ? `&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup>`
     : '';
   const filaMovil = d.movil ? `<tr><td style="font-size:12px; color:#333333; padding-bottom:3px;">${enlaceTelefono(d.movil)}</td></tr>` : '';
-  const filaUrgenciasReferencia = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia)
+  const filaUrgenciasReferencia = (!d.oficina.esLineaUrgencias && d.oficina.telefonoUrgenciasReferencia && d.mostrarUrgenciasReferencia !== false)
     ? `<tr><td style="font-size:11.5px; color:#666666; padding-bottom:4px;">Urgencias ${enlaceTelefono(d.oficina.telefonoUrgenciasReferencia)}&nbsp;<sup style="font-size:7px;font-weight:700;color:${e.colorAcento};vertical-align:super;line-height:0;">24H</sup></td></tr>`
     : '';
 
