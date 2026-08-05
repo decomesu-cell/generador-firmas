@@ -55,7 +55,7 @@ const CONFIG_LOCAL = {
         },
         caudete: {
           etiqueta: "Oficina Caudete",
-          telefono: "965 82 72 26",         // <-- SUSTITUYE por el teléfono REAL de Caudete
+          telefono: "965 82 74 26",         // <-- SUSTITUYE por el teléfono REAL de Caudete
           esLineaUrgencias: false,
           telefonoUrgenciasReferencia: "967 34 33 46", // el de Almansa, no lo toques salvo que cambie
           direccion: "Calle Ejemplo 5, Caudete (Albacete)", // <-- SUSTITUYE por la dirección REAL
