@@ -16,8 +16,9 @@ function generarFirmaUniversidadBase(d, colores) {
     ? `<span style="color:${colores.separador};">&nbsp;&nbsp;·&nbsp;&nbsp;</span><a href="tel:+34${telefonoSinEspacios(d.movil)}" style="color:${colores.datos};text-decoration:none;">${d.movil}</a>`
     : '';
   const anchoCabeceraEstimado = d.nombreCompleto.length * 9.5 + d.cargo.length * 6.5 + 30;
-  const cabecera = anchoCabeceraEstimado <= 400
-    ? `<tr><td align="center" style="padding:0 0 8px;text-align:center;line-height:22px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:18px;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:14px;color:${colores.puesto};">&nbsp;&nbsp;·&nbsp;&nbsp;${d.cargo}</span></td></tr>`
+  const anchoSeguroEnUnaLinea = 330;
+  const cabecera = anchoCabeceraEstimado <= anchoSeguroEnUnaLinea
+    ? `<tr><td align="center" style="padding:0 0 8px;text-align:center;line-height:22px;white-space:nowrap;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:18px;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:14px;color:${colores.puesto};">&nbsp;&nbsp;&middot;&nbsp;&nbsp;${d.cargo}</span></td></tr>`
     : `<tr><td align="center" style="padding:0 32px 0 0;text-align:center;line-height:22px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:18px;font-weight:400;color:${colores.nombre};">${d.nombreCompleto}</span></td></tr><tr><td align="center" style="padding:0 32px 8px 0;text-align:center;line-height:18px;"><span style="font-family:'Poppins',Arial,Helvetica,sans-serif;font-size:14px;color:${colores.puesto};">${d.cargo}</span></td></tr>`;
 
   return `
