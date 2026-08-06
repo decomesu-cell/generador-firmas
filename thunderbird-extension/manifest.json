@@ -2,7 +2,7 @@
     "manifest_version":  3,
     "name":  "Generador de firmas Almantour y Montescar",
     "description":  "Genera una firma corporativa y la asigna a una identidad de Thunderbird.",
-    "version":  "2.2.0",
+    "version":  "2.2.1",
     "author":  "Almantour",
     "browser_specific_settings":  {
                                       "gecko":  {

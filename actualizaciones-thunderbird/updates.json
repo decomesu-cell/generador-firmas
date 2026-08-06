@@ -3,9 +3,9 @@
                    "generador-firmas@almantour.es":  {
                                                          "updates":  [
                                                                          {
-                                                                             "version":  "2.2.0",
-                                                                             "update_link":  "https://decomesu-cell.github.io/generador-firmas/actualizaciones-thunderbird/generador-firmas-thunderbird-2.2.0.xpi",
-                                                                             "update_hash":  "sha256:645fb8667f6a041e3ddacc4258bd65c677e0ed107204f6a88f250e4ae70c277d",
+                                                                             "version":  "2.2.1",
+                                                                             "update_link":  "https://decomesu-cell.github.io/generador-firmas/actualizaciones-thunderbird/generador-firmas-thunderbird-2.2.1.xpi",
+                                                                             "update_hash":  "sha256:9a489dc255014319c104280ebb2b1b13c427703ec2a2f699f23daf60b0bfa1c4",
                                                                              "applications":  {
                                                                                                   "gecko":  {
                                                                                                                 "strict_min_version":  "128.0"
