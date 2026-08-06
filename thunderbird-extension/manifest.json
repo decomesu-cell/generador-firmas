@@ -1,0 +1,40 @@
+{
+    "manifest_version":  3,
+    "name":  "Generador de firmas Almantour y Montescar",
+    "description":  "Genera una firma corporativa y la asigna a una identidad de Thunderbird.",
+    "version":  "2.2.0",
+    "author":  "Almantour",
+    "browser_specific_settings":  {
+                                      "gecko":  {
+                                                    "id":  "generador-firmas@almantour.es",
+                                                    "strict_min_version":  "128.0",
+                                                    "update_url":  "https://decomesu-cell.github.io/generador-firmas/actualizaciones-thunderbird/updates.json"
+                                                }
+                                  },
+    "permissions":  [
+                        "accountsRead",
+                        "accountsIdentities"
+                    ],
+    "action":  {
+                   "default_title":  "Generar firma",
+                   "default_icon":  {
+                                        "16":  "icons/icon-16.png",
+                                        "32":  "icons/icon-32.png",
+                                        "64":  "icons/icon-64.png"
+                                    }
+               },
+    "icons":  {
+                  "16":  "icons/icon-16.png",
+                  "32":  "icons/icon-32.png",
+                  "64":  "icons/icon-64.png",
+                  "128":  "icons/icon-128.png"
+              },
+    "background":  {
+                       "scripts":  [
+                                       "background.js"
+                                   ]
+                   },
+    "host_permissions":  [
+                             "https://decomesu-cell.github.io/*"
+                         ]
+}

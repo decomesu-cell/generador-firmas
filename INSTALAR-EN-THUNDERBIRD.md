@@ -1,6 +1,6 @@
 # Cómo instalar y utilizar el generador en Thunderbird
 
-El archivo que debes instalar es `generador-firmas-thunderbird-2.1.0.xpi`.
+El archivo que debes instalar es `generador-firmas-thunderbird-2.2.0.xpi`.
 
 ## Requisito
 
@@ -13,7 +13,7 @@ Necesitas Thunderbird 128 o una versión posterior.
 3. Entra en **Complementos y temas**.
 4. Pulsa el botón con forma de rueda dentada.
 5. Elige **Instalar complemento desde archivo…**.
-6. Selecciona `generador-firmas-thunderbird-2.1.0.xpi`.
+6. Selecciona `generador-firmas-thunderbird-2.2.0.xpi`.
 7. Acepta los permisos solicitados.
 
 El permiso para leer y modificar identidades es necesario para localizar tus direcciones de correo y guardar la firma en la dirección seleccionada. El complemento no envía correos ni guarda datos personales fuera de Thunderbird.

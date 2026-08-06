@@ -1,0 +1,25 @@
+body { padding-top: 20px; padding-bottom: 40px; }
+.contenedor { max-width: 760px; }
+.introduccion { color:#555; font-size:14px; line-height:1.5; margin-bottom:20px; }
+.ayuda, .aviso-sustitucion { color:#777; font-size:12px; line-height:1.4; margin:6px 0 0; }
+#campoCargoOtro { display:none; margin-top:8px; }
+#btnInstalar {
+  margin-top:12px;
+  width:100%;
+  min-height:46px;
+  padding:12px;
+  border:0;
+  border-radius:6px;
+  background:#0a7d3c;
+  color:#fff;
+  font-size:15px;
+  font-weight:bold;
+  cursor:pointer;
+}
+#btnInstalar:hover { background:#086a33; }
+#btnInstalar:disabled { background:#aaa; cursor:wait; }
+#mensajeAccion { margin:0 0 12px; padding:10px 12px; border-radius:6px; }
+#mensajeAccion:empty { display:none; }
+#mensajeAccion.exito { display:block; background:#e8f5ec; color:#086a33; }
+#mensajeAccion.error { display:block; background:#fff0f0; color:#b42318; }
+.pie-version { margin-top:24px; text-align:center; color:#999; font-size:11px; }

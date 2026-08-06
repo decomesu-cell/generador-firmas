@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de firmas</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/thunderbird.css">
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Generador de firma para Thunderbird</h1>
+    <p class="introduccion">Elige la dirección de correo, rellena tus datos y guarda la firma. La firma anterior de esa dirección será sustituida.</p>
+
+    <div id="mensajeAccion" role="status" aria-live="polite"></div>
+
+    <label for="campoIdentidad">Cuenta o dirección de Thunderbird</label>
+    <select id="campoIdentidad"></select>
+    <p id="ayudaIdentidad" class="ayuda">La firma se aplicará únicamente a la dirección seleccionada.</p>
+
+    <div id="formulario">
+      <label for="campoEmpresa">Empresa</label>
+      <select id="campoEmpresa"></select>
+
+      <div id="filaOficina">
+        <label for="campoOficina">Oficina</label>
+        <select id="campoOficina"></select>
+      </div>
+
+      <div id="bloqueEmergenciasCaudete" class="opcion-universidad" style="display:none;">
+        <label><input type="checkbox" id="campoMostrarEmergencias" checked> Mostrar teléfono de emergencias 24H</label>
+      </div>
+
+      <div class="fila-dos">
+        <div>
+          <label for="campoNombre">Nombre</label>
+          <input type="text" id="campoNombre" autocomplete="given-name">
+        </div>
+        <div>
+          <label for="campoApellidos">Apellidos</label>
+          <input type="text" id="campoApellidos" autocomplete="family-name">
+        </div>
+      </div>
+
+      <label for="campoCargo">Cargo</label>
+      <select id="campoCargo"></select>
+      <input type="text" id="campoCargoOtro" placeholder="Escribe tu cargo">
+
+      <label for="campoEmail">Email</label>
+      <input type="email" id="campoEmail" readonly>
+
+      <label for="campoMovil">Móvil <span class="opcional">(opcional, 9 cifras)</span></label>
+      <input type="text" id="campoMovil" placeholder="600 00 00 00" inputmode="numeric" maxlength="12">
+
+      <div id="bloqueUniversidad" class="opcion-universidad" style="display:none;">
+        <label><input type="checkbox" id="campoUniversidad"> Activar diseños para universidades</label>
+      </div>
+
+      <label for="campoEstilo">Diseño de firma</label>
+      <select id="campoEstilo"></select>
+    </div>
+
+    <button id="btnGenerar" type="button">Generar vista previa</button>
+
+    <section id="resultado">
+      <label>Vista previa</label>
+      <div id="vistaPrevia"></div>
+      <button id="btnInstalar" type="button">Guardar esta firma en Thunderbird</button>
+      <p class="aviso-sustitucion">Al guardar, Thunderbird sustituirá la firma HTML actual de la dirección seleccionada.</p>
+    </section>
+
+    <footer class="pie-version">Extensión Thunderbird · Versión 2.1.15</footer>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/templates/combinada.js"></script>
+  <script src="js/templates/minimalista.js"></script>
+  <script src="js/templates/universidad.js"></script>
+  <script src="js/templates/registro.js"></script>
+  <script src="js/generator.js"></script>
+</body>
+</html>

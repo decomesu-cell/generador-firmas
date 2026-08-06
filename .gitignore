@@ -1,0 +1,10 @@
+# Archivos locales de pruebas y comparaciones
+prueba-*
+vista-*
+comparacion-*
+Versiones anteriores/
+icon-source-orange.png
+
+# Los instaladores publicables se conservan en actualizaciones-thunderbird/
+generador-firmas-thunderbird-*.xpi
+!generador-firmas-thunderbird-2.2.0.xpi

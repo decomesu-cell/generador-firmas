@@ -1,0 +1,113 @@
+/* ============================================================
+     ESTILOS DE LA PÁGINA DEL GENERADOR (esto NO es la firma,
+     es solo el "vestido" del formulario que ve el empleado)
+     ============================================================ */
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, Segoe UI, Arial, sans-serif;
+    background: #f4f5f7;
+    margin: 0;
+    padding: 30px 16px;
+    color: #1a1a1a;
+  }
+  .contenedor {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  h1 { font-size: 20px; margin-top: 0; }
+  label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+  }
+  .fila-dos { display: flex; gap: 12px; }
+  .fila-dos > div { flex: 1; }
+  .opcional { font-weight: normal; color: #999; font-size: 11px; }
+  .opcion-universidad { margin-top:16px; padding:11px 12px; background:#fff8f1; border:1px solid #f1c7ad; border-radius:6px; }
+  .opcion-universidad label { margin:0; cursor:pointer; }
+  .opcion-universidad input { width:auto; min-height:auto; margin:0 7px 0 0; vertical-align:middle; }
+  button#btnGenerar {
+    margin-top: 22px;
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  button#btnGenerar:hover { background: #333; }
+  #resultado { margin-top: 28px; display: none; }
+  #vistaPrevia {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fafafa;
+    overflow-x: auto;
+  }
+  .accionesFirma {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .accionesFirma button {
+    width: 100%;
+    padding: 11px;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  #btnCopiar { background: #0a7d3c; }
+  #btnCopiarHtml { background: #365899; }
+  #btnDescargarHtml { background: #6b4f9b; }
+  .errorCampo { border-color: #c62828 !important; background:#fff7f7; }
+  #mensajeAccion {
+    display: none;
+    color: #0a7d3c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 6px;
+  }
+  #mensajeCopiado {
+    display: none;
+    color: #0a7d3c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  /* Adaptación para móviles */
+  input[type=text], input[type=email], select, button { min-height: 44px; }
+  @media (max-width: 640px) {
+    body { padding: 0; background: #ffffff; }
+    .contenedor { width:100%; max-width:none; min-height:100vh; border-radius:0; padding:20px 16px 32px; box-shadow:none; }
+    h1 { font-size:22px; line-height:1.25; }
+    input[type=text], input[type=email], select { font-size:16px; padding:12px; }
+    .fila-dos { display:block; }
+    .accionesFirma { grid-template-columns:1fr; }
+    .accionesFirma button { width:100%; }
+    #vistaPrevia { padding:10px; -webkit-overflow-scrolling:touch; }
+    #vistaPrevia > table { transform-origin:top left; }
+  }
+
+.pie-version { margin-top:24px; text-align:center; color:#999; font-size:11px; }

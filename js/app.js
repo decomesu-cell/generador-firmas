@@ -13,7 +13,7 @@ if (claveEmpresaFija) {
 document.getElementById('btnGenerar').addEventListener('click', () => {
   if (!validarFormulario()) return;
   const datos = recogerDatosFormulario();
-  const html = ESTILOS[datos.estilo].generar(datos);
+  const html = envolverFirmaConSeparador(ESTILOS[datos.estilo].generar(datos));
   const vista = document.getElementById('vistaPrevia');
   vista.innerHTML = html;
   document.getElementById('resultado').style.display = 'block';
